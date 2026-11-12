@@ -166,7 +166,7 @@ def s:GetFilenameChecks(): dict<list<string>>
     cabalproject: ['cabal.project', 'cabal.project.local'],
     cairo: ['file.cairo'],
     calendar: ['calendar', '/.calendar/file', '/share/calendar/any/calendar.file', '/share/calendar/calendar.file', 'any/share/calendar/any/calendar.file', 'any/share/calendar/calendar.file'],
-    cangjie: ['file.cj'],
+    cangjie: ['file.cj', 'file.cj.macrocall'],
     capnp: ['file.capnp'],
     catalog: ['catalog', 'sgml.catalogfile', 'sgml.catalog', 'sgml.catalog-file'],
     cdc: ['file.cdc'],

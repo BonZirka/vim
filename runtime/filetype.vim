@@ -1,7 +1,7 @@
 " Vim support file to detect file types
 "
 " Maintainer:		The Vim Project <https://github.com/vim/vim>
-" Last Change:		2026 Oct 12
+" Last Change:		2026 Nov 13
 " Former Maintainer:	Bram Moolenaar <Bram@vim.org>
 
 " If the filetype can be detected from extension or file name(the final path component),
@@ -228,6 +228,9 @@ endif
 " .h files can be C, C++, Ch, Objective-C, or Objective-C++.
 " Set g_filetype_h to set a different filetype
 au BufNewFile,BufRead *.h			call dist#ft#FTheader()
+
+" Cangjie macro expansion dumps (same syntax as Cangjie sources)
+au BufNewFile,BufRead *.cj.macrocall		setf cangjie
 
 " Changelog
 au BufNewFile,BufRead changelog.Debian,changelog.dch,NEWS.Debian,NEWS.dch,*/debian/changelog
